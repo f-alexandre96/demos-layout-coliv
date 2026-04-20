@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-container": "#1a2b4c",
+                "on-primary-fixed-variant": "#364669",
+                "primary": "#031636",
+                "tertiary": "#091828",
+                "surface-dim": "#d8dadc",
+                "on-primary": "#ffffff",
+                "tertiary-fixed-dim": "#b9c8de",
+                "outline": "#75777f",
+                "surface-bright": "#f7f9fb",
+                "error": "#ba1a1a",
+                "secondary-container": "#79f7ea",
+                "on-primary-fixed": "#071b3b",
+                "on-error-container": "#93000a",
+                "surface-tint": "#4e5e82",
+                "on-primary-container": "#8293ba",
+                "secondary": "#006a63",
+                "tertiary-container": "#1e2d3e",
+                "on-tertiary-container": "#8694a9",
+                "on-secondary-fixed": "#00201d",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#e6e8ea",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed-dim": "#5adace",
+                "surface-container-low": "#f2f4f6",
+                "primary-fixed-dim": "#b6c6f0",
+                "on-secondary-fixed-variant": "#00504a",
+                "on-surface-variant": "#44474e",
+                "on-secondary-container": "#007169",
+                "inverse-on-surface": "#eff1f3",
+                "outline-variant": "#c5c6cf",
+                "primary-fixed": "#d8e2ff",
+                "secondary-fixed": "#79f7ea",
+                "surface-variant": "#e0e3e5",
+                "surface": "#f7f9fb",
+                "background": "#f7f9fb",
+                "on-tertiary-fixed": "#0d1c2d",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#b6c6f0",
+                "on-secondary": "#ffffff",
+                "on-background": "#191c1e",
+                "inverse-surface": "#2d3133",
+                "tertiary-fixed": "#d4e4fa",
+                "surface-container-highest": "#e0e3e5",
+                "surface-container": "#eceef0",
+                "on-surface": "#191c1e",
+                "on-error": "#ffffff",
+                "on-tertiary-fixed-variant": "#39485a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #031636 0%, #1a2b4c 100%);
+        }
+        .glass-panel {
+            background: rgba(247, 249, 251, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex items-center justify-center p-4">
+<!-- Auth Container -->
+<main class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 overflow-hidden bg-surface-container-lowest rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)]">
+<!-- Left Side: Visual/Editorial -->
+<section class="hidden lg:flex relative overflow-hidden flex-col justify-end p-12 editorial-gradient">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<img alt="Co-living space" class="w-full h-full object-cover" data-alt="Modern high-end co-living apartment interior with minimalist furniture, large windows, warm wooden textures and soft ambient evening lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV93adOkqKDMFyCFGCddSDJ_Zn6RrKwUYnx16ZwFGkoCGm4n5Dab7UzSWIr8wr77VgAtQWoVveN7C7J-ezWYU-WrfV8e6zFsqYXFypKcgETVbVo7FA9xC7T2ltOrVjod9Cx-nFsYuSKGzy8-WzEaa3j5WQNvH__gj68hN852ECNuA-0ItyzF6_-Dp70lQv8AsHyaCHhljyvP4TpXr2RXQN78--7SrI_RHodBgyaEYE-_MoMYXYp50bR2bKzDGQzjIl-9hsw555Lp4"/>
+</div>
+<div class="relative z-10 space-y-4">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-[10px] font-bold tracking-widest uppercase">
+                    Comunidade Curada
+                </div>
+<h1 class="font-headline text-5xl font-extrabold text-white tracking-tighter leading-[0.9]">
+                    Sua nova forma<br/>de morar.
+                </h1>
+<p class="text-on-primary-container font-body text-lg max-w-sm">
+                    Entre para a rede exclusiva de coliving e descubra espaços que respiram design e conexão.
+                </p>
+</div>
+<!-- Branding Anchor -->
+<div class="absolute top-12 left-12 flex items-center gap-2">
+<span class="font-headline font-black text-3xl text-white tracking-tighter">Coliv</span>
+</div>
+</section>
+<!-- Right Side: Interaction -->
+<section class="p-8 lg:p-16 flex flex-col justify-center">
+<div class="max-w-md w-full mx-auto space-y-10">
+<!-- Mobile Branding -->
+<div class="lg:hidden mb-8">
+<span class="font-headline font-black text-2xl text-primary tracking-tighter">Coliv</span>
+</div>
+<div class="space-y-2">
+<h2 class="font-headline text-3xl font-bold text-on-surface tracking-tight">Bem-vindo de volta</h2>
+<p class="text-on-surface-variant font-body">Acesse sua conta para gerenciar seu espaço.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-4">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="font-label text-sm font-bold text-on-surface-variant px-1" for="email">E-mail</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-on-surface-variant group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-0 focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50 text-on-surface ring-1 ring-transparent focus:ring-1 focus:ring-primary/10" id="email" placeholder="nome@exemplo.com" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<label class="font-label text-sm font-bold text-on-surface-variant" for="password">Senha</label>
+<a class="text-xs font-bold text-secondary hover:text-on-secondary-container transition-colors" href="#">Esqueci minha senha</a>
+</div>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-on-surface-variant group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-0 focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50 text-on-surface ring-1 ring-transparent focus:ring-1 focus:ring-primary/10" id="password" placeholder="••••••••" type="password"/>
+<div class="absolute inset-y-0 right-4 flex items-center cursor-pointer text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Indicator -->
+<div class="flex items-center gap-3 p-4 rounded-xl bg-surface-container-low/50">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="text-[11px] text-on-surface-variant leading-tight">Suas credenciais são criptografadas e protegidas por nossos protocolos de segurança de elite.</p>
+</div>
+<!-- CTA Action -->
+<button class="w-full py-4 px-6 editorial-gradient text-white rounded-xl font-label font-bold text-sm tracking-widest uppercase shadow-xl shadow-primary/10 active:scale-[0.98] transition-all" type="submit">
+                        Entrar na conta
+                    </button>
+</form>
+<!-- Footer Links -->
+<div class="pt-6 text-center space-y-6">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/15"></div>
+</div>
+<div class="relative flex justify-center text-xs">
+<span class="px-4 bg-surface-container-lowest text-on-surface-variant font-medium">Ou continue com</span>
+</div>
+</div>
+<div class="flex justify-center gap-4">
+<button class="flex items-center justify-center w-12 h-12 rounded-full border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<img alt="Google" class="w-5 h-5" data-alt="Google logo icon in high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhN1O5ja6Xvqf7dI8eeMXhCXJ0JioLNlVcOYPEL4mLRKTEYZODl84z9QMwE1eXLt98N1jr0_CZtaGm-2u7dnbDpmvosjHq6EeXfXTUG3H3ORFqAjVadneuCLFecg00sO9pXMs4R4Qhj1s8SUyMc4lecgpzFIVVkbt4bOzuiQ_nS_FnKmT75K4QEVF9emvXMK1Q0U3SDS2yJI2t6bwwOn0GSZVxkqvcotGSmLCD1gcaDxGIiex9oByZKuuU-cxc0m1YnHuiM5mJcp4"/>
+</button>
+<button class="flex items-center justify-center w-12 h-12 rounded-full border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-on-surface">ios</span>
+</button>
+</div>
+<p class="text-sm font-body text-on-surface-variant">
+                        Ainda não faz parte? 
+                        <a class="font-bold text-primary hover:underline underline-offset-4" href="#">Criar conta</a>
+</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Background Decoration -->
+<div class="fixed top-0 right-0 -z-10 w-[600px] h-[600px] bg-secondary-container/20 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
+</body></html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#1a2b4c",
+                        "on-primary-fixed-variant": "#364669",
+                        "primary": "#031636",
+                        "tertiary": "#091828",
+                        "surface-dim": "#d8dadc",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#b9c8de",
+                        "outline": "#75777f",
+                        "surface-bright": "#f7f9fb",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#79f7ea",
+                        "on-primary-fixed": "#071b3b",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#4e5e82",
+                        "on-primary-container": "#8293ba",
+                        "secondary": "#006a63",
+                        "tertiary-container": "#1e2d3e",
+                        "on-tertiary-container": "#8694a9",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#5adace",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed-dim": "#b6c6f0",
+                        "on-secondary-fixed-variant": "#00504a",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary-container": "#007169",
+                        "inverse-on-surface": "#eff1f3",
+                        "outline-variant": "#c5c6cf",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary-fixed": "#79f7ea",
+                        "surface-variant": "#e0e3e5",
+                        "surface": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#0d1c2d",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b6c6f0",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed": "#d4e4fa",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container": "#eceef0",
+                        "on-surface": "#191c1e",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#39485a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .glass-nav {
+            background: rgba(247, 249, 251, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col">
+<header class="sticky top-0 w-full z-50 glass-nav flex items-center justify-between px-8 py-6">
+<div class="text-2xl font-black text-primary tracking-tighter font-headline">
+            Coliv
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Sobre nós</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Comunidades</a>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-xl font-bold text-sm tracking-wide active:scale-95 transition-all">
+                ENTRAR
+            </button>
+</div>
+</header>
+<main class="flex-grow flex flex-col md:flex-row items-center px-6 md:px-20 py-12 gap-12 max-w-7xl mx-auto">
+<div class="w-full md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
+<div class="flex flex-col gap-4">
+<span class="text-secondary font-bold tracking-[0.2em] text-xs uppercase">Viva o amanhã, hoje</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+                    Sua casa,<br/>sua <span class="text-secondary italic">tribo</span>.
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-md mt-4">
+                    Descubra uma nova forma de morar. Espaços modernos, curadoria exclusiva e uma comunidade pronta para te receber.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold text-base tracking-widest hover:shadow-xl hover:shadow-primary/10 active:scale-95 transition-all">
+                    CRIAR CONTA
+                </button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-xl font-bold text-base tracking-widest border border-outline-variant/15 active:scale-95 transition-all">
+                    ENTRAR
+                </button>
+</div>
+<div class="flex items-center gap-4 mt-8 py-4 px-6 bg-surface-container-low rounded-2xl w-fit">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-surface-container-low object-cover" data-alt="close-up portrait of a smiling young woman with curly hair in a bright outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7aKnFZS-ZNG4jQlSLwY5Aa-UYenIPME1DERAGu5UX7gAwZLWkPFYt3AW0dy8teK9nYmCR20RMrph5llVzgI1ZoCvqIB2zk87YjdfqGAC9pjmzD3_KIl1Pm1zgPO_fyju8FxS6fGdOnXICXcO7mgg8iCtNox_otv2IBE8xQJvgeJrHV2w9LJ3yijMYY6eGEikogOAPDtIyzjsyEZbotPasMuACxLEAOiQiHmws0LOWIUHIwuPtoYtMDfNL4Dg_afHgOhR0bmRndxo"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface-container-low object-cover" data-alt="portrait of a young man with a beard looking thoughtfully away in an urban loft setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrxWK8tnGY8Jnn40_3W3S0CjW9zmrEs04yLhliNegwjpZvrznhqygUJ33FU4QRTR4ekC2dNvAFkni37s5EHooxMKG9yP5IjZSUvBO83NWjTmTNfDcGRHkpuNi4_Hcnp7_58wc42jN_6JlyfSnSV2FHJQby1P9xy7gYIkHFzalap8QiKJ-IAwXTjMUA9r0c8xzf4-tV5QclzGBt7cNhjJn1_Xv8J-17XmER4TANX_mcGwOWYD2v4qnsDBBo_B8jYTwrnEkh0wlIgEo"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface-container-low object-cover" data-alt="smiling man in his late 20s wearing a casual shirt against a minimalist white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_L2LT_rXmE0g8uxfLRkSm0h43lz1P27ttHAuRyUi5Z48chvT2wITdiQMqq-uqDv04Q1gno9GVltPzYn7T2Rod5JzyIqIxAJo_wh2fppUQyqscooUzrIaM2w_JuVqzLUf-xyOi5iP_8Mo6xIm9MLDZxdtd637JubHJaLjJClm1WCtdP-w7vn30zM3YtWEMt2EXZPzvqunyOYbCFKqqQgQDdSelNp48fhATpqrFGWvZIrFbHCDQe9KexrCqCWUlq9NyCXTdUZhgMxk"/>
+</div>
+<p class="text-sm font-semibold text-on-surface-variant">
+<span class="text-primary font-bold">+500 pessoas</span> já vivem no Coliv
+                </p>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative order-1 md:order-2">
+<div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="Modern open-plan living room with natural light, featuring roommates laughing and sharing a meal at a large wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5lzRHgnEG0MywQHKg56H8q49Ut7w6ExaCVIuVRR3eat97tpnZkHgc0r78zQu66xJ4JEHw1jYyBQ23lTvHkfJFwq6FQa2mGa929dh08TcdkzlnNTqGl3zZgiEGxHRfHMPlwVPffVdVPZiSULJ2bjCynAeRSIdea-QKnXk46hrif8niLQqRWRn0ISVJxZw7Nfp7obJhg_-sAMnk0E-ckWgPtDRvIx72h8QSuOvBjjU6RZKFy-L9ov9lEM0EvF0UlP4VVp6TClkaQTE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 glass-nav p-6 rounded-2xl flex items-center justify-between">
+<div>
+<p class="text-primary font-bold text-sm uppercase tracking-wider">Unidade Vila Madalena</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant font-bold ml-2">4.9 (120 reviews)</span>
+</div>
+</div>
+<div class="h-12 w-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary/10 rounded-full blur-3xl z-0"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl z-0"></div>
+<div class="absolute -right-8 top-1/4 hidden lg:block z-20">
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-lg flex items-center gap-4 border border-outline-variant/10">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">wifi</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Alta Velocidade</p>
+<p class="text-sm font-bold text-primary tracking-tight">Internet 1Gbps inclusa</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-outline-variant/10 bg-surface-container-lowest/50">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-xl font-black text-primary tracking-tighter font-headline">Coliv</div>
+<p class="text-xs text-on-surface-variant font-medium tracking-wide">© 2024 COLIV EXPERIENCE. TODOS OS DIREITOS RESERVADOS.</p>
+</div>
+<div class="flex gap-8">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-secondary transition-colors" href="#">language</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-secondary transition-colors" href="#">share</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-secondary transition-colors" href="#">contact_support</a>
+</div>
+</footer>
+</body></html>

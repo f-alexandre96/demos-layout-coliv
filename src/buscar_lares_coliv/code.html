@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#1a2b4c",
+                        "on-primary-fixed-variant": "#364669",
+                        "primary": "#031636",
+                        "tertiary": "#091828",
+                        "surface-dim": "#d8dadc",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#b9c8de",
+                        "outline": "#75777f",
+                        "surface-bright": "#f7f9fb",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#79f7ea",
+                        "on-primary-fixed": "#071b3b",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#4e5e82",
+                        "on-primary-container": "#8293ba",
+                        "secondary": "#006a63",
+                        "tertiary-container": "#1e2d3e",
+                        "on-tertiary-container": "#8694a9",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#5adace",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed-dim": "#b6c6f0",
+                        "on-secondary-fixed-variant": "#00504a",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary-container": "#007169",
+                        "inverse-on-surface": "#eff1f3",
+                        "outline-variant": "#c5c6cf",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary-fixed": "#79f7ea",
+                        "surface-variant": "#e0e3e5",
+                        "surface": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#0d1c2d",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b6c6f0",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed": "#d4e4fa",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container": "#eceef0",
+                        "on-surface": "#191c1e",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#39485a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #031636 0%, #1a2b4c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #031636 0%, #1a2b4c 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen">
+<header class="sticky top-0 w-full z-50 bg-slate-50/70 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="text-2xl font-black text-[#1A2B4C] tracking-tighter">Coliv</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-2 rounded-full bg-surface-container-low active:scale-95 transition-all duration-200">
+<span class="material-symbols-outlined text-[#1A2B4C]">search</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center border-2 border-secondary-container">
+<img alt="" class="w-full h-full rounded-full object-cover" data-alt="close-up portrait of a young professional smiling man in a clean studio setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBByjMCaAqaS1r3ooDnMf5sLNDNgcx-GYrvuk-j7ibWxu-s4ADsjB_bkhHJDhwyV-eD0DcjWSUg12KJ2LZOuBLxjWwhbwI9gi20nVqKWx7psk-HbidBA2X47wh8DCRJBOXh4NEsl4JJSEzuoBwrb1hVWpb5i8H_k2TPaod8tVuJ45ochRKBYOBXXvMKKYI7kKTstW0vkBpEJXp18uHNVLBisoSTXbbRT8WYLcwT-EX5M7BebMiNElOPpsfNiyiGjb7-X1MrcBzD3Vs"/>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
+<section class="mb-10">
+<h1 class="font-headline font-bold text-4xl tracking-tight text-on-surface mb-2">
+                Encontre seu <span class="text-gradient-primary">próximo santuário.</span>
+</h1>
+<p class="text-on-surface-variant font-medium">Curadoria exclusiva baseada no seu estilo de vida.</p>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden rounded-xl m-2">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="modern minimalist loft apartment with high ceilings, large windows, and designer furniture in neutral tones with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBesAWdaM8chJSIvnJfTv6QH61A1ObcPdUihjoQQBTglQhi57kWzYhvILy7fJSEb_G2skbuFRrRUhmIeNTBsI7XW6aA-XxBhkwBeRwj3dYx3AKOiy0N4z3M7O4lzfuejLHv4keloBezoadOIsQDa6naQcNy8qHHOf0kxZPJ8koJ5zDFWd1f3NsAtUw2kXeeLG5MYGVxxnmi8eyEvTR-i5icLlud36PFZmDl9S6z7JMdxCqca4V8wugcbCuy52rIRAliGp2vSzVSV0E"/>
+<div class="absolute top-4 right-4 bg-[#79F7EA] text-[#007169] font-headline font-extrabold px-3 py-1.5 rounded-lg shadow-lg">
+                        98% Match
+                    </div>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-lg shadow-xl translate-y-1">
+                        R$ 2.450<span class="text-xs font-normal opacity-80">/mês</span>
+</div>
+</div>
+<div class="px-6 py-6 space-y-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">Loft Pinheiros Design</h3>
+<div class="flex items-center text-on-surface-variant gap-1.5">
+<span class="material-symbols-outlined text-sm">near_me</span>
+<span class="text-sm font-semibold tracking-tight">1.2km do seu trabalho</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pets</span> Pet-friendly
+                        </span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volume_off</span> Silencioso
+                        </span>
+</div>
+<div class="pt-2">
+<button class="w-full bg-gradient-primary text-on-primary font-label text-sm font-bold tracking-[0.05em] py-3.5 rounded-xl uppercase active:scale-[0.98] transition-transform">
+                            Ver Detalhes
+                        </button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden rounded-xl m-2">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="elegant scandinavian style shared living room with warm wood textures, plants, and natural light streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP_MQfq4Iy9gcuEVkbXiQpqinWEHtcKwG5pI-KkRs3UtbbuzKG56qtaIRLHHsEW5lHiHIyUEIEWYegMq1o3NqBI34GwBolmLZoNWVQb47oVPVXPXHiOjbh45AuTEoAGk8d2b5XA5wXBIVAVSiIsRQDKdv8gNJvMdLwp8alDlKAdxJ-XRbm-u0t-Qu_G444A0cptMfqneTp-OXcc6rSMQJc2mt99FstPgFxWpr2cTOQvW65jz4Dprd1V2wgR62Jar7faH5UTyqIIsg"/>
+<div class="absolute top-4 right-4 bg-[#79F7EA] text-[#007169] font-headline font-extrabold px-3 py-1.5 rounded-lg shadow-lg">
+                        92% Match
+                    </div>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-lg shadow-xl translate-y-1">
+                        R$ 1.900<span class="text-xs font-normal opacity-80">/mês</span>
+</div>
+</div>
+<div class="px-6 py-6 space-y-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">Vila Madalena Shared</h3>
+<div class="flex items-center text-on-surface-variant gap-1.5">
+<span class="material-symbols-outlined text-sm">near_me</span>
+<span class="text-sm font-semibold tracking-tight">2.8km do seu trabalho</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Energia Solar
+                        </span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">diversity_3</span> Comunidade Ativa
+                        </span>
+</div>
+<div class="pt-2">
+<button class="w-full bg-gradient-primary text-on-primary font-label text-sm font-bold tracking-[0.05em] py-3.5 rounded-xl uppercase active:scale-[0.98] transition-transform">
+                            Ver Detalhes
+                        </button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group transition-all duration-300">
+<div class="relative h-[280px] overflow-hidden rounded-xl m-2">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="spacious bright bedroom with high-end furniture, large mirror, and plush bedding in a luxury co-living space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDuDZrk15jBFBLles29p8J95Mrtjc_FBhqzinbTZ0Z-iESc8foUoWn7iB5hUnbdsaVztkNF4IiA2r7eZCUQGNZfxVxNpJTIsyzqLuroUTzSfnMsuRK5ES-2cJqJ3s-0mjeZpaQQj2Z4obDE_EDK6uXFFD17mI8l3-aikYmvY00vxOmmIKU3uAlk8LxW3irPPULuqcFQJLbBPK-ZzHgO3ju4Htddo3driyOtjZavFtmIF-W3b2ltxPFgkXXFgXKN7BDRWFp18cv0z4"/>
+<div class="absolute top-4 right-4 bg-[#79F7EA] text-[#007169] font-headline font-extrabold px-3 py-1.5 rounded-lg shadow-lg">
+                        89% Match
+                    </div>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-4 py-2 rounded-lg font-headline font-bold text-lg shadow-xl translate-y-1">
+                        R$ 3.100<span class="text-xs font-normal opacity-80">/mês</span>
+</div>
+</div>
+<div class="px-6 py-6 space-y-4">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">Jardins Premium Suite</h3>
+<div class="flex items-center text-on-surface-variant gap-1.5">
+<span class="material-symbols-outlined text-sm">near_me</span>
+<span class="text-sm font-semibold tracking-tight">4.1km do seu trabalho</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span> Banheiro Privativo
+                        </span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cleaning_services</span> Limpeza Inclusa
+                        </span>
+</div>
+<div class="pt-2">
+<button class="w-full bg-gradient-primary text-on-primary font-label text-sm font-bold tracking-[0.05em] py-3.5 rounded-xl uppercase active:scale-[0.98] transition-transform">
+                            Ver Detalhes
+                        </button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-8 pt-4 bg-white/80 backdrop-blur-2xl z-50 rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.04)] border-t border-slate-100/10">
+<a class="flex flex-col items-center justify-center bg-[#79F7EA] text-[#007169] rounded-2xl px-5 py-2 active:scale-90 transition-transform duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#1A2B4C] px-5 py-2 active:scale-90 transition-transform duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#1A2B4C] px-5 py-2 active:scale-90 transition-transform duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Gestão</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-[#1A2B4C] px-5 py-2 active:scale-90 transition-transform duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Perfil</span>
+</a>
+</nav>
+<div class="fixed bottom-32 right-6 z-40">
+<button class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center shadow-2xl active:scale-95 transition-all duration-300 border-4 border-white">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+</body></html>

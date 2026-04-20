@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#1a2b4c",
+                    "on-primary-fixed-variant": "#364669",
+                    "primary": "#031636",
+                    "tertiary": "#091828",
+                    "surface-dim": "#d8dadc",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#b9c8de",
+                    "outline": "#75777f",
+                    "surface-bright": "#f7f9fb",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#79f7ea",
+                    "on-primary-fixed": "#071b3b",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#4e5e82",
+                    "on-primary-container": "#8293ba",
+                    "secondary": "#006a63",
+                    "tertiary-container": "#1e2d3e",
+                    "on-tertiary-container": "#8694a9",
+                    "on-secondary-fixed": "#00201d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#5adace",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#b6c6f0",
+                    "on-secondary-fixed-variant": "#00504a",
+                    "on-surface-variant": "#44474e",
+                    "on-secondary-container": "#007169",
+                    "inverse-on-surface": "#eff1f3",
+                    "outline-variant": "#c5c6cf",
+                    "primary-fixed": "#d8e2ff",
+                    "secondary-fixed": "#79f7ea",
+                    "surface-variant": "#e0e3e5",
+                    "surface": "#f7f9fb",
+                    "background": "#f7f9fb",
+                    "on-tertiary-fixed": "#0d1c2d",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#b6c6f0",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#191c1e",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-fixed": "#d4e4fa",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface-container": "#eceef0",
+                    "on-surface": "#191c1e",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#39485a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f7f9fb; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .custom-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #031636;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 4px solid #79f7ea;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-all duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#1A2B4C] dark:text-slate-50">arrow_back</span>
+</button>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#1A2B4C] dark:text-slate-50">Preferências</span>
+</div>
+<div class="text-2xl font-black text-[#1A2B4C] dark:text-slate-50 tracking-tighter">Coliv</div>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 py-10 pb-32">
+<!-- Hero Section: Editorial Voice -->
+<section class="mb-12">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight leading-[0.9] mb-4">
+                Encontre seu <br/> <span class="text-secondary-container [text-shadow:_2px_2px_0_#031636]">match ideal.</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-md">O co-living é sobre pessoas. Defina seus hábitos para que possamos sugerir o lar perfeito.</p>
+</section>
+<!-- Bento Grid Form Layout -->
+<form class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Price Range Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-[0_24px_48px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-2xl font-bold mb-2">Faixa de Investimento</h2>
+<p class="text-on-surface-variant text-sm mb-8">Qual o valor mensal planejado para sua estadia?</p>
+</div>
+<div class="relative w-full py-10 px-2">
+<input class="custom-slider w-full h-1 bg-surface-variant rounded-full appearance-none outline-none" max="8000" min="800" step="100" type="range"/>
+<div class="flex justify-between mt-6 font-bold text-primary">
+<span>R$ 800</span>
+<div class="bg-primary-container text-white px-4 py-2 rounded-lg text-lg">R$ 2.400 - R$ 4.500</div>
+<span>R$ 8.000</span>
+</div>
+</div>
+</div>
+<!-- Location Card -->
+<div class="md:col-span-4 bg-primary-container p-8 rounded-xl text-white relative overflow-hidden group">
+<div class="relative z-10">
+<h2 class="font-headline text-2xl font-bold mb-2">Localização</h2>
+<p class="text-on-primary-container text-sm mb-6">Onde a mágica acontece?</p>
+<div class="relative">
+<input class="w-full bg-white/10 border-none rounded-xl py-4 px-12 placeholder:text-white/40 focus:ring-2 focus:ring-secondary-container text-white" placeholder="Ex: Pinheiros, SP" type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-secondary-container">location_on</span>
+</div>
+</div>
+<!-- Visual Background Texture -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+</div>
+<!-- Sleep Schedule Card -->
+<div class="md:col-span-4 bg-surface-container-low p-8 rounded-xl">
+<h2 class="font-headline text-2xl font-bold mb-6">Ritmo de Sono</h2>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-3 rounded-full bg-white text-primary font-bold text-sm shadow-sm hover:bg-secondary-container transition-colors" type="button">Madrugador</button>
+<button class="px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container font-bold text-sm" type="button">Noturno</button>
+<button class="px-6 py-3 rounded-full bg-white text-primary font-bold text-sm shadow-sm hover:bg-secondary-container transition-colors" type="button">Equilibrado</button>
+</div>
+<div class="mt-8 flex items-center gap-4 p-4 bg-white/50 rounded-xl">
+<span class="material-symbols-outlined text-primary">bedtime</span>
+<p class="text-xs text-on-surface-variant">Preferência por ambientes silenciosos após as 22h.</p>
+</div>
+</div>
+<!-- Multi-Selection Habits Grid -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Sociability -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline font-bold">Sociabilidade</h3>
+<span class="material-symbols-outlined text-secondary">groups</span>
+</div>
+<div class="space-y-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-surface-variant flex items-center justify-center group-hover:border-secondary transition-colors">
+<div class="w-3 h-3 bg-secondary rounded-sm opacity-0 group-hover:opacity-20"></div>
+</div>
+<span class="text-sm font-medium">Amo jantares coletivos</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-secondary bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs">check</span>
+</div>
+<span class="text-sm font-medium">Equilíbrio é tudo</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-surface-variant flex items-center justify-center group-hover:border-secondary transition-colors"></div>
+<span class="text-sm font-medium">Prefiro meu espaço</span>
+</label>
+</div>
+</div>
+<!-- Cleanliness -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline font-bold">Limpeza</h3>
+<span class="material-symbols-outlined text-secondary">cleaning_services</span>
+</div>
+<div class="space-y-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-surface-variant flex items-center justify-center group-hover:border-secondary transition-colors"></div>
+<span class="text-sm font-medium">Minimalista &amp; Impecável</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-secondary bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs">check</span>
+</div>
+<span class="text-sm font-medium">Organizado na medida</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-6 h-6 rounded-md border-2 border-surface-variant flex items-center justify-center group-hover:border-secondary transition-colors"></div>
+<span class="text-sm font-medium">Caos criativo (limpo)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Final Row: Pets & Work -->
+<div class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pets Card -->
+<div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-secondary-container">
+<h3 class="font-headline font-bold flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary">pets</span> Animais
+                    </h3>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg">
+<span class="text-sm font-medium">Tenho ou aceito pets</span>
+<div class="w-12 h-6 bg-secondary-container rounded-full relative cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-secondary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Work Habits -->
+<div class="md:col-span-2 bg-white p-6 rounded-xl shadow-sm flex flex-col md:flex-row items-center gap-6">
+<div class="flex-shrink-0">
+<img alt="Work focus" class="w-20 h-20 rounded-full object-cover" data-alt="close-up of clean modern wooden desk with laptop and coffee cup in a brightly lit co-working space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApw0gTwfRzDDzC_-ahm1CY5gjRI6x_5QeZomcpJPaq5iddPFsAgPMWDor1cyR8DKE6s2Dd3Lsb9savYL3indrP44a03MjuoghrcCLalniDmN4bYzeCGqTShHtkx2bpNJ0Z6yWZr1tNNLtp0csRbnqClQ7EbvH0I2VRh2HfgXvM7XUsKs1Ze0NNmtcoAk28vXOxvRfW6cj59Q2vrYor3DnHzKHYUgsDbiHm3rA_ScsfUlTFXbRQk-UQABTkMvf1fHknzgv8ZUVK36k"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold mb-2">Hábitos de Trabalho</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-all" type="button">Home Office</button>
+<button class="px-4 py-2 bg-primary text-white rounded-full text-xs font-bold uppercase tracking-wider" type="button">Híbrido</button>
+<button class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-all" type="button">Trabalho Externo</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+<!-- CTA Action -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-full max-w-md px-6 z-40">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 rounded-xl font-headline font-extrabold text-lg uppercase tracking-widest shadow-[0_12px_40px_rgba(3,22,54,0.3)] active:scale-95 transition-transform">
+                Salvar Preferências
+            </button>
+</div>
+</main>
+<!-- Suppressed BottomNavBar based on focused task rule, but identity remains clear -->
+<div class="fixed top-0 right-0 p-8 opacity-10 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[200px] leading-none text-primary">diversity_3</span>
+</div>
+</body></html>

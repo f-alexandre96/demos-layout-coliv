@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#1a2b4c",
+                    "on-primary-fixed-variant": "#364669",
+                    "primary": "#031636",
+                    "tertiary": "#091828",
+                    "surface-dim": "#d8dadc",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#b9c8de",
+                    "outline": "#75777f",
+                    "surface-bright": "#f7f9fb",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#79f7ea",
+                    "on-primary-fixed": "#071b3b",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#4e5e82",
+                    "on-primary-container": "#8293ba",
+                    "secondary": "#006a63",
+                    "tertiary-container": "#1e2d3e",
+                    "on-tertiary-container": "#8694a9",
+                    "on-secondary-fixed": "#00201d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#5adace",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#b6c6f0",
+                    "on-secondary-fixed-variant": "#00504a",
+                    "on-surface-variant": "#44474e",
+                    "on-secondary-container": "#007169",
+                    "inverse-on-surface": "#eff1f3",
+                    "outline-variant": "#c5c6cf",
+                    "primary-fixed": "#d8e2ff",
+                    "secondary-fixed": "#79f7ea",
+                    "surface-variant": "#e0e3e5",
+                    "surface": "#f7f9fb",
+                    "background": "#f7f9fb",
+                    "on-tertiary-fixed": "#0d1c2d",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#b6c6f0",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#191c1e",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-fixed": "#d4e4fa",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface-container": "#eceef0",
+                    "on-surface": "#191c1e",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#39485a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-slate-50/70 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-all duration-200 text-[#1A2B4C] hover:opacity-80">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#1A2B4C]">Cadastrar Imóvel</h1>
+</div>
+<div class="text-2xl font-black text-[#1A2B4C] tracking-tighter">Coliv</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 pt-8 pb-32">
+<div class="mb-12">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight leading-tight">
+                Crie seu <br/><span class="text-secondary">Santuário Compartilhado.</span>
+</h2>
+<p class="mt-4 text-on-surface-variant text-lg max-w-xl">
+                Transforme seu espaço em uma experiência editorial. Adicione os detalhes que tornam seu imóvel único.
+            </p>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Bento Grid: Photo Upload -->
+<div class="md:col-span-12 lg:col-span-7 space-y-6">
+<div class="bg-surface-container-low p-8 rounded-[2rem] relative overflow-hidden group">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-xl text-primary">Galeria de Estilo</h3>
+<span class="text-sm font-semibold bg-primary-container text-on-primary-container px-3 py-1 rounded-full">1 a 10 fotos</span>
+</div>
+<div class="grid grid-cols-4 grid-rows-2 gap-3 h-[400px]">
+<div class="col-span-3 row-span-2 relative group cursor-pointer overflow-hidden rounded-2xl bg-surface-variant flex items-center justify-center border-2 border-dashed border-outline-variant hover:border-secondary transition-colors">
+<div class="text-center">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-2">add_a_photo</span>
+<p class="text-sm font-bold text-on-surface-variant">Foto Principal</p>
+</div>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-xl flex items-center justify-center border border-outline-variant/10 cursor-pointer hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-outline">add</span>
+</div>
+<div class="col-span-1 row-span-1 bg-surface-container-high rounded-xl flex items-center justify-center border border-outline-variant/10 cursor-pointer hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-outline">add</span>
+</div>
+</div>
+<p class="mt-4 text-xs text-on-surface-variant italic font-medium">Arraste para reordenar. A primeira foto será a capa do seu anúncio editorial.</p>
+</div>
+<!-- Description & Basic Info -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.02)] space-y-8">
+<div>
+<label class="block text-sm font-bold tracking-widest uppercase text-on-surface-variant mb-3">Manifesto do Espaço</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl p-4 min-h-[160px] focus:ring-1 focus:ring-primary text-on-surface placeholder:text-outline/60" placeholder="Descreva a alma do seu imóvel, as regras da casa e o perfil da comunidade..."></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold tracking-widest uppercase text-on-surface-variant mb-3">Investimento Mensal</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-primary">R$</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 pl-12 pr-4 focus:ring-1 focus:ring-primary text-on-surface font-bold text-lg" placeholder="0,00" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold tracking-widest uppercase text-on-surface-variant mb-3">Tipo de Vaga</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 focus:ring-1 focus:ring-primary text-on-surface font-medium appearance-none">
+<option>Quarto Privativo</option>
+<option>Quarto Compartilhado</option>
+<option>Suíte Master</option>
+<option>Studio Completo</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Column: Location & Amenities -->
+<div class="md:col-span-12 lg:col-span-5 space-y-8">
+<!-- Location Section -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.02)]">
+<h3 class="font-headline font-bold text-xl text-primary mb-6">Localização</h3>
+<div class="space-y-4">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">location_on</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 pl-12 pr-4 focus:ring-1 focus:ring-primary text-on-surface" placeholder="Buscar endereço ou CEP..." type="text"/>
+</div>
+<div class="h-48 w-full rounded-2xl bg-surface-container-high overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="minimalist clean map interface showing a neighborhood in São Paulo with subtle blue and grey markers" data-location="São Paulo, Brazil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqvheLMPJqXy9SewEqtDFzn3vbLfWGVzou0qkqPOA2GiiBAHwNjBSMfSLp6ICvBKs6gWJ_ZSMm9QDwjoCBL1zBq5dZ6O2SGzfIbnnwWisDkQry797nhAGy-xloZSHBq6xJuiETrxqM4qCUJNta7bye2v9qghgO9B_gB9LmokU74Z8KEQ30Z-62fURlZ8LTHOPNQcWZ_EEUPfE4WQmIgjp4CuxIigmNPj8oXCqvGACa4DqDvtF2CT3MeKQex8l-iErWyLjOuIvrkrA"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-2xl animate-pulse">
+<div class="w-4 h-4 bg-secondary-fixed rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Amenities Section -->
+<div class="bg-surface-container-low p-8 rounded-[2rem]">
+<h3 class="font-headline font-bold text-xl text-primary mb-6">Comodidades Premium</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">wifi</span> Wi-Fi 5G
+                        </button>
+<button class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">fitness_center</span> Academia
+                        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">work</span> Coworking
+                        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">pool</span> Piscina
+                        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">local_laundry_service</span> Lavanderia
+                        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">pets</span> Pet Friendly
+                        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold flex items-center gap-2 hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+<span class="material-symbols-outlined text-lg">cleaning_services</span> Limpeza Semanal
+                        </button>
+</div>
+</div>
+<!-- Trust Card -->
+<div class="bg-primary text-on-primary p-8 rounded-[2rem] relative overflow-hidden group">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-2 bg-secondary-container rounded-lg">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<span class="font-headline font-bold text-lg">Anfitrião Verificado</span>
+</div>
+<p class="text-on-primary-container text-sm leading-relaxed">
+                            Ao publicar, você concorda com nossos padrões de hospitalidade e segurança da comunidade Coliv.
+                        </p>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Footer Action -->
+<div class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-2xl px-6 py-6 border-t border-slate-100/10 z-40">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="hidden md:block">
+<p class="text-sm font-bold text-primary tracking-wider uppercase">Status do Anúncio</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="text-xs text-on-surface-variant font-medium">Pronto para publicar</span>
+</div>
+</div>
+<button class="w-full md:w-auto bg-gradient-to-br from-primary to-primary-container text-white px-12 py-5 rounded-xl font-headline font-extrabold text-sm tracking-[0.1em] uppercase shadow-[0_10px_30px_rgba(3,22,54,0.3)] active:scale-95 transition-all hover:shadow-[0_15px_40px_rgba(3,22,54,0.4)]">
+                Publicar Anúncio
+            </button>
+</div>
+</div>
+</body></html>
