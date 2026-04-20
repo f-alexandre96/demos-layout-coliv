@@ -1,0 +1,460 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Documentação Coliv</title></head><body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px;"><h1>Documentação de Interface e API Visual: Demos Layout Coliv</h1>
+<p><strong>Versão</strong>: 1.0.0
+<strong>Projeto</strong>: Coliv (The Curated Sanctuary)
+<strong>Descrição</strong>: Especificação dos módulos e interfaces (telas) de alta fidelidade para a plataforma de co-living.</p>
+<hr>
+<h2>1. Visão Geral do Sistema</h2>
+<p>O sistema &quot;Coliv&quot; é dividido estruturalmente em módulos front-end (telas) baseados no Design System <em>The Curated Sanctuary</em>.</p>
+<ul>
+<li><strong>Cores Principais</strong>: Navy e Mint.</li>
+<li><strong>Estilo</strong>: High-End Editorial, Glassmorphism.</li>
+<li><strong>Tipografia</strong>: Plus Jakarta Sans (Títulos), Manrope (Corpo).</li>
+</ul>
+<hr>
+<h2>2. Especificação dos Endpoints Visuais (Telas)</h2>
+<h3>2.1. Tela de Boas Vindas</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/boas_vindas_coliv</code></li>
+<li><strong>Ação Principal</strong>: Apresentação e Captação de Leads.</li>
+<li><strong>Descrição</strong>: Landing Page focada em demonstrar o conceito &quot;Sua casa, sua tribo&quot;.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+<td>Navegação</td>
+<td>Logo Coliv, Links (Sobre nós, Comunidades) e Botão ENTRAR.</td>
+</tr>
+<tr>
+<td>CTAs</td>
+<td>Botões</td>
+<td>Ações &quot;CRIAR CONTA&quot; e &quot;ENTRAR&quot;.</td>
+</tr>
+<tr>
+<td>Social Proof</td>
+<td>Componente</td>
+<td>Avatares de moradores e contador &quot;+500 pessoas&quot;.</td>
+</tr>
+<tr>
+<td>Card de Demonstração</td>
+<td>Componente</td>
+<td>Imagem de unidade (ex: Vila Madalena) com rating (4.9) e reviews.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.2. Login</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/login_coliv</code></li>
+<li><strong>Ação Principal</strong>: Autenticação de Usuário.</li>
+<li><strong>Descrição</strong>: Ponto de acesso à plataforma para usuários registrados.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>E-mail</td>
+<td>Input Text</td>
+<td>Campo para o e-mail do usuário.</td>
+</tr>
+<tr>
+<td>Senha</td>
+<td>Input Password</td>
+<td>Campo de senha com função de alternar visibilidade (Toggle).</td>
+</tr>
+<tr>
+<td>Esqueci minha senha</td>
+<td>Link</td>
+<td>Redirecionamento para fluxo de recuperação.</td>
+</tr>
+<tr>
+<td>Entrar na conta</td>
+<td>Botão</td>
+<td>Ação de submissão (Submit).</td>
+</tr>
+<tr>
+<td>Social Login</td>
+<td>Botões</td>
+<td>Autenticação via Google e Apple.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.3. Cadastro</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/cadastro_coliv</code></li>
+<li><strong>Ação Principal</strong>: Criação de Nova Conta.</li>
+<li><strong>Descrição</strong>: Formulário inicial para cadastrar anfitriões ou colegas.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quem é você?</td>
+<td>Input Radio</td>
+<td>Cartões de seleção de perfil: &quot;Colega&quot; ou &quot;Anfitrião&quot;.</td>
+</tr>
+<tr>
+<td>Nome Completo</td>
+<td>Input Text</td>
+<td>Identificação do usuário.</td>
+</tr>
+<tr>
+<td>CPF</td>
+<td>Input Text</td>
+<td>Com validador em tempo real (ícone verde de check).</td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td>Input Email</td>
+<td>Endereço de e-mail de cadastro.</td>
+</tr>
+<tr>
+<td>Senha</td>
+<td>Input Password</td>
+<td>Exigência mínima de 8 caracteres.</td>
+</tr>
+<tr>
+<td>Continuar</td>
+<td>Botão</td>
+<td>Confirmação dos dados de cadastro.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.4. Buscar Lares</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/buscar_lares_coliv</code></li>
+<li><strong>Ação Principal</strong>: Feed e Pesquisa de Imóveis.</li>
+<li><strong>Descrição</strong>: Interface para usuários &quot;Colega&quot; explorarem lares compatíveis via algoritmo de Match.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Barra de Pesquisa</td>
+<td>Input Search</td>
+<td>Busca avançada de imóveis.</td>
+</tr>
+<tr>
+<td>Card de Imóvel</td>
+<td>Componente</td>
+<td>Contém: Imagem, Tag &quot;% Match&quot;, Preço (R$), Título, Distância.</td>
+</tr>
+<tr>
+<td>Tags de Comodidade</td>
+<td>Label</td>
+<td>Indicações (ex: Pet-friendly, Energia Solar).</td>
+</tr>
+<tr>
+<td>Ver Detalhes</td>
+<td>Botão</td>
+<td>Ação para abrir os detalhes do imóvel.</td>
+</tr>
+<tr>
+<td>Bottom Nav</td>
+<td>Navegação</td>
+<td>Abas: Início, Chat, Gestão, Perfil.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.5. Cadastrar Imóvel</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/cadastrar_im_vel_coliv</code></li>
+<li><strong>Ação Principal</strong>: Criação de Anúncio.</li>
+<li><strong>Descrição</strong>: Fluxo de adição de um novo imóvel pelo &quot;Anfitrião&quot;.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Galeria de Estilo</td>
+<td>Upload</td>
+<td>Upload com <em>drag &amp; drop</em> (1 a 10 fotos).</td>
+</tr>
+<tr>
+<td>Manifesto do Espaço</td>
+<td>Textarea</td>
+<td>Descrição do ambiente e regras da casa.</td>
+</tr>
+<tr>
+<td>Investimento Mensal</td>
+<td>Input Number</td>
+<td>Valor mensal da locação (em Reais).</td>
+</tr>
+<tr>
+<td>Tipo de Vaga</td>
+<td>Select (Dropdown)</td>
+<td>Opções: Quarto Privativo, Suíte Master, etc.</td>
+</tr>
+<tr>
+<td>Localização</td>
+<td>Input Search</td>
+<td>Campo conectado a componente de mapa geográfico.</td>
+</tr>
+<tr>
+<td>Comodidades Premium</td>
+<td>Toggle Buttons</td>
+<td>Wi-Fi 5G, Academia, Coworking, etc.</td>
+</tr>
+<tr>
+<td>Publicar Anúncio</td>
+<td>Botão Primário</td>
+<td>Efetiva a publicação do imóvel.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.6. Dashboard do Anfitrião</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/dashboard_anfitri_o_coliv</code></li>
+<li><strong>Ação Principal</strong>: Gerenciamento de Anúncios e Matches.</li>
+<li><strong>Descrição</strong>: Visão gerencial do proprietário.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Card do Imóvel</td>
+<td>Componente</td>
+<td>Métricas: &quot;Interessados&quot;, &quot;Visitas&quot; e &quot;Matches&quot;.</td>
+</tr>
+<tr>
+<td>Próxima Visita</td>
+<td>Widget</td>
+<td>Informação da agenda e botão de visualização detalhada.</td>
+</tr>
+<tr>
+<td>Colegas Compatíveis</td>
+<td>Lista (Grid)</td>
+<td>Cards dos usuários &quot;Matches&quot; (Imagem, Nome, Bio, % Match).</td>
+</tr>
+<tr>
+<td>Aceitar/Recusar</td>
+<td>Botões</td>
+<td>Ações de conversão (Match/Discard) no card de candidato.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.7. Gestão da Moradia</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/gest_o_da_moradia_coliv</code></li>
+<li><strong>Ação Principal</strong>: Administração Financeira e Rotina do Imóvel.</li>
+<li><strong>Descrição</strong>: Central do Morador após consolidação do contrato.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Resumo do Contrato</td>
+<td>Componente</td>
+<td>Próximo Vencimento (R$), dias restantes e status do Seguro.</td>
+</tr>
+<tr>
+<td>Moradores</td>
+<td>Carrossel</td>
+<td>Exibição de avatares com opção de adição (+).</td>
+</tr>
+<tr>
+<td>Pendência Total</td>
+<td>Indicador</td>
+<td>Valor (R$) da dívida global e a fatia do usuário (&quot;Sua parte&quot;).</td>
+</tr>
+<tr>
+<td>Histórico Recente</td>
+<td>Lista</td>
+<td>Contas compartilhadas (Energia, Internet) com status.</td>
+</tr>
+<tr>
+<td>Adicionar Despesa</td>
+<td>Botão</td>
+<td>Inserção de novos boletos na cota comum.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.8. Preferências do Anfitrião</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/prefer_ncias_do_anfitri_o</code></li>
+<li><strong>Ação Principal</strong>: Configuração de Regras de Match (Lado Anfitrião).</li>
+<li><strong>Descrição</strong>: Definição do perfil desejado de colega.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gênero Preferencial</td>
+<td>Radio Buttons</td>
+<td>&quot;Qualquer&quot;, &quot;Feminino&quot;, &quot;Masculino&quot;.</td>
+</tr>
+<tr>
+<td>Faixa Etária</td>
+<td>Range Slider</td>
+<td>Controle deslizante duplo para idade (ex: 22 a 32 anos).</td>
+</tr>
+<tr>
+<td>Animais</td>
+<td>Radio Buttons</td>
+<td>Aceitação de pets (Sim, Apenas pequenos, Não).</td>
+</tr>
+<tr>
+<td>Política de Limpeza</td>
+<td>Selector</td>
+<td>Tipos de limpeza (Escala, Profissional, Independente).</td>
+</tr>
+<tr>
+<td>Política de Visitas</td>
+<td>Checkboxes</td>
+<td>&quot;Visitas diurnas&quot;, &quot;Pernoite&quot;, &quot;FDS livre&quot;.</td>
+</tr>
+<tr>
+<td>Regras Adicionais</td>
+<td>Textarea</td>
+<td>Espaço aberto para restrições específicas.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.9. Preferências do Colega</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/prefer_ncias_do_colega</code></li>
+<li><strong>Ação Principal</strong>: Configuração de Regras de Match (Lado Colega).</li>
+<li><strong>Descrição</strong>: Definição de hábitos e limites financeiros do buscador.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Faixa de Investimento</td>
+<td>Range Slider</td>
+<td>Controle duplo para orçamento mínimo e máximo (R$).</td>
+</tr>
+<tr>
+<td>Localização</td>
+<td>Input Text</td>
+<td>Preferência de bairros ou regiões.</td>
+</tr>
+<tr>
+<td>Ritmo de Sono</td>
+<td>Botões</td>
+<td>&quot;Madrugador&quot;, &quot;Noturno&quot;, &quot;Equilibrado&quot;.</td>
+</tr>
+<tr>
+<td>Sociabilidade</td>
+<td>Checkboxes</td>
+<td>Nível de interação (Jantares coletivos, Equilíbrio, Meu espaço).</td>
+</tr>
+<tr>
+<td>Limpeza</td>
+<td>Checkboxes</td>
+<td>Organização (Minimalista, Organizado, Caos criativo).</td>
+</tr>
+<tr>
+<td>Animais</td>
+<td>Toggle Switch</td>
+<td>Indicação se possui pets.</td>
+</tr>
+<tr>
+<td>Hábitos de Trabalho</td>
+<td>Botões</td>
+<td>&quot;Home Office&quot;, &quot;Híbrido&quot;, &quot;Externo&quot;.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>2.10. Bate-Papo (Chat)</h3>
+<ul>
+<li><strong>Caminho do Recurso</strong>: <code>/src/bate_papo_coliv</code></li>
+<li><strong>Ação Principal</strong>: Troca de Mensagens (Messaging).</li>
+<li><strong>Descrição</strong>: Interface de comunicação direta aberta apenas em caso de <em>Match</em>.</li>
+</ul>
+<p><strong>Parâmetros de Interface (Campos)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cabeçalho</td>
+<td>Identificador</td>
+<td>Avatar, Nome e Tag de Status do outro usuário.</td>
+</tr>
+<tr>
+<td>Banner de Match</td>
+<td>Notificação</td>
+<td>Alerta visual do Match e botão &quot;Enviar Convite de Moradia&quot;.</td>
+</tr>
+<tr>
+<td>Área do Chat</td>
+<td>Canvas</td>
+<td>Balões de mensagem (Timestamp, Sistema, Leitura/Ticks).</td>
+</tr>
+<tr>
+<td>Campo de Texto</td>
+<td>Input</td>
+<td>Área de digitação de novas mensagens.</td>
+</tr>
+<tr>
+<td>Anexos (+)</td>
+<td>Botão</td>
+<td>Upload de imagens e arquivos.</td>
+</tr>
+<tr>
+<td>Enviar</td>
+<td>Botão</td>
+<td>Submissão de nova mensagem.</td>
+</tr>
+</tbody></table>
+
+</body></html>

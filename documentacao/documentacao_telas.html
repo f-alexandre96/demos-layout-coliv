@@ -1,0 +1,158 @@
+<h1>Documentação do Projeto: Demos Layout Coliv</h1>
+<p>Este documento apresenta uma análise detalhada da estrutura do projeto &quot;Coliv&quot;, um protótipo de alta fidelidade para uma plataforma de co-living e moradias compartilhadas. O projeto possui um design system chamado &quot;The Curated Sanctuary&quot;, focado em um estilo editorial de alto padrão (High-End Editorial), cores Navy e Mint, além de farto uso de componentes minimalistas e com glassmorphism.</p>
+<h2>Estrutura do Projeto (Camadas)</h2>
+<p>A arquitetura do projeto é dividida basicamente em diretórios, onde cada pasta dentro de <code>src</code> representa uma tela ou um módulo específico da aplicação, contendo seu respectivo arquivo HTML (que também inclui o CSS via Tailwind).</p>
+<ul>
+<li><strong><code>src/</code></strong>: Diretório principal que contém o código das telas.<ul>
+<li><strong>Pastas de Telas</strong>: Cada tela (como <code>login_coliv</code>, <code>cadastro_coliv</code>, etc.) tem sua própria pasta contendo o código-fonte (<code>code.html</code>) e uma imagem de demonstração/preview (<code>screen.png</code>).</li>
+<li><strong><code>habitat_modern/</code></strong>: Contém o arquivo <code>DESIGN.md</code>, que funciona como o <em>Design System</em> oficial do projeto. Ele estabelece as regras visuais, tipográficas (Plus Jakarta Sans e Manrope) e hierarquia de componentes.</li>
+</ul>
+</li>
+<li><strong><code>documentacao/</code></strong>: Pasta reservada para arquivos e descrições técnicas gerais do projeto.</li>
+</ul>
+<hr>
+<h2>Telas e Campos Disponíveis</h2>
+<p>Abaixo está a explicação detalhada de cada tela desenvolvida e os campos/elementos presentes em cada uma delas:</p>
+<h3>1. Boas Vindas (boas_vindas_coliv)</h3>
+<p><strong>Explicação</strong>: A <em>Landing Page</em> (Página Inicial) do Coliv. Seu objetivo é apresentar o conceito da plataforma (&quot;Sua casa, sua tribo&quot;), gerar impacto visual e direcionar o usuário para a criação de conta ou login.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Header (Cabeçalho)</strong>: Logo &quot;Coliv&quot;, Links de navegação (&quot;Sobre nós&quot;, &quot;Comunidades&quot;) e botão &quot;ENTRAR&quot;.</li>
+<li><strong>Hero Section</strong>: Título de impacto, subtítulo explicativo.</li>
+<li><strong>Botões de Ação (CTAs)</strong>: &quot;CRIAR CONTA&quot; e &quot;ENTRAR&quot;.</li>
+<li><strong>Social Proof (Prova Social)</strong>: Seção com fotos de avatares e o texto &quot;+500 pessoas já vivem no Coliv&quot;.</li>
+<li><strong>Card de Demonstração (Imagem)</strong>: Uma unidade de exemplo (Ex: &quot;Unidade Vila Madalena&quot;) mostrando a nota de avaliação (ex: 4.9) e a quantidade de <em>reviews</em>.</li>
+</ul>
+<h3>2. Login (login_coliv)</h3>
+<p><strong>Explicação</strong>: Tela para os usuários que já possuem conta na plataforma poderem acessar o sistema.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Campo &quot;E-mail&quot;</strong>: Entrada de texto para o endereço de e-mail.</li>
+<li><strong>Campo &quot;Senha&quot;</strong>: Entrada de texto oculta, com ícone lateral (toggle) para exibir/ocultar a senha.</li>
+<li><strong>Link de Recuperação</strong>: Link &quot;Esqueci minha senha&quot;.</li>
+<li><strong>Botão de Ação</strong>: Botão &quot;Entrar na conta&quot;.</li>
+<li><strong>Login Social</strong>: Botões para login via contas do Google ou Apple (iOS).</li>
+<li><strong>Link de Cadastro</strong>: Direcionamento &quot;Criar conta&quot; para usuários novos.</li>
+</ul>
+<h3>3. Cadastro (cadastro_coliv)</h3>
+<p><strong>Explicação</strong>: Onde ocorre a criação de uma nova conta, solicitando dados básicos e identificando o perfil do usuário.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Seleção de Perfil (&quot;Quem é você?&quot;)</strong>: Dois botões do tipo rádio em formato de cartão: &quot;Colega&quot; (buscando lugar) ou &quot;Anfitrião&quot; (tem um lugar disponível).</li>
+<li><strong>Campo &quot;Nome Completo&quot;</strong>: Entrada de texto.</li>
+<li><strong>Campo &quot;CPF&quot;</strong>: Entrada de texto (possui um ícone de &quot;check&quot; e mensagem verde indicando validação do documento).</li>
+<li><strong>Campo &quot;E-mail&quot;</strong>: Entrada de texto padrão para e-mail.</li>
+<li><strong>Campo &quot;Senha&quot;</strong>: Entrada de texto (mínimo de 8 caracteres) com toggle de visibilidade.</li>
+<li><strong>Botão de Ação</strong>: Botão &quot;Continuar&quot;.</li>
+<li><strong>Rodapé Legal</strong>: Links obrigatórios para &quot;Termos de Uso&quot; e &quot;Política de Privacidade&quot;.</li>
+</ul>
+<h3>4. Buscar Lares (buscar_lares_coliv)</h3>
+<p><strong>Explicação</strong>: Esta tela é o feed principal para o perfil &quot;Colega&quot;, onde são listados os imóveis compatíveis com o usuário baseando-se no algoritmo do Coliv.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Cabeçalho</strong>: Logo, ícone de Pesquisa (lupa) e Foto de Perfil.</li>
+<li><strong>Lista de Imóveis (Cards)</strong>:<ul>
+<li><strong>Imagem do Imóvel</strong>.</li>
+<li><strong>Tag de Match</strong>: Porcentagem de compatibilidade (Ex: &quot;98% Match&quot;).</li>
+<li><strong>Preço</strong>: Valor mensal do aluguel (Ex: R$ 2.450/mês).</li>
+<li><strong>Título</strong>: Nome do imóvel/quarto (Ex: &quot;Loft Pinheiros Design&quot;).</li>
+<li><strong>Distância</strong>: Indicador de localização (Ex: &quot;1.2km do seu trabalho&quot;).</li>
+<li><strong>Comodidades (Tags)</strong>: Atributos do local (Ex: Pet-friendly, Silencioso, Energia Solar).</li>
+<li><strong>Botão &quot;Ver Detalhes&quot;</strong>.</li>
+</ul>
+</li>
+<li><strong>Barra de Navegação Inferior</strong>: Abas de Início, Chat, Gestão e Perfil.</li>
+<li><strong>Botão Flutuante (FAB)</strong>: Botão de ação &quot;+&quot; para novas requisições ou filtros rápidos.</li>
+</ul>
+<h3>5. Cadastrar Imóvel (cadastrar_im_vel_coliv)</h3>
+<p><strong>Explicação</strong>: O formulário para que um &quot;Anfitrião&quot; adicione um novo imóvel na plataforma Coliv. Focado em uma experiência guiada.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Galeria de Estilo</strong>: Área de envio (upload) de 1 a 10 fotos, com suporte a arrastar e soltar (drag &amp; drop), permitindo selecionar a foto principal de capa.</li>
+<li><strong>Manifesto do Espaço</strong>: Área de texto livre (textarea) para o anfitrião descrever a alma do imóvel e regras da casa.</li>
+<li><strong>Investimento Mensal</strong>: Campo numérico para definir o valor do aluguel em Reais (R$).</li>
+<li><strong>Tipo de Vaga</strong>: Menu de seleção (Dropdown) contendo opções como Quarto Privativo, Quarto Compartilhado, Suíte Master ou Studio Completo.</li>
+<li><strong>Localização</strong>: Campo de busca para o endereço ou CEP, acompanhado por um componente visual de mapa.</li>
+<li><strong>Comodidades Premium</strong>: Conjunto de botões selecionáveis (Ex: Wi-Fi 5G, Academia, Coworking, Piscina, Lavanderia, Pet Friendly, Limpeza Semanal).</li>
+<li><strong>Card de Confiança</strong>: Banner informando que o Anfitrião é &quot;Verificado&quot;.</li>
+<li><strong>Barra Inferior Fixa</strong>: Exibe o &quot;Status do Anúncio&quot; e contém o botão primário &quot;Publicar Anúncio&quot;.</li>
+</ul>
+<h3>6. Dashboard do Anfitrião (dashboard_anfitri_o_coliv)</h3>
+<p><strong>Explicação</strong>: É o painel de controle do dono do imóvel para acompanhar o desempenho do seu anúncio e os interessados.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Card do Imóvel</strong>: Exibe o status (Ativo), o título do anúncio e as métricas de engajamento: &quot;Interessados&quot;, &quot;Visitas&quot; e &quot;Matches&quot;.</li>
+<li><strong>Próxima Visita</strong>: Widget contendo o nome e horário do próximo agendamento, além do botão &quot;Ver Agenda Completa&quot;.</li>
+<li><strong>Colegas Compatíveis (Matches)</strong>: Lista de perfis compatíveis indicados pelo &quot;Algoritmo Coliv&quot;.<ul>
+<li>Cada Card de perfil possui: Foto, % de Match, Nome, Idade, Profissão, uma breve Bio/Citação e os botões &quot;Recusar/Fechar&quot; e &quot;Aceitar (Match)&quot;.</li>
+</ul>
+</li>
+<li><strong>Filtros Avançados</strong>: Botão no cabeçalho da lista para refinar o perfil de buscas.</li>
+</ul>
+<h3>7. Gestão da Moradia (gest_o_da_moradia_coliv)</h3>
+<p><strong>Explicação</strong>: Funciona como a &quot;Central do Morador&quot;. Tela de uso contínuo focada em administração financeira e convivência de uma república/co-living existente.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Santuário (Header)</strong>: Imagem do imóvel, nome (&quot;Vila Madalena Collective&quot;) e badge indicando &quot;Contrato Ativo&quot;.</li>
+<li><strong>Resumo do Contrato</strong>:<ul>
+<li><strong>Próximo Vencimento</strong>: Valor do aluguel (R$) e barra de progresso dos dias restantes.</li>
+<li><strong>Término</strong>: Data (Mês e Ano) de fim do contrato.</li>
+<li><strong>Seguro</strong>: Status da garantia do aluguel.</li>
+</ul>
+</li>
+<li><strong>Moradores</strong>: Lista visual em formato carrossel mostrando os avatares dos colegas de quarto e um botão &quot;+&quot; para adicionar.</li>
+<li><strong>Despesas do Grupo</strong>:<ul>
+<li><strong>Pendência Total e Sua Parte</strong>: Valores (R$) referentes à dívida atual.</li>
+<li><strong>Histórico Recente</strong>: Lista de contas e boletos (ex: Energia Elétrica, Limpeza, Internet), informando o valor, o vencimento e os status (Dividido, Finalizado, Aguardando).</li>
+<li><strong>Botão Adicionar</strong>: Para cadastrar novas despesas compartilhadas.</li>
+</ul>
+</li>
+</ul>
+<h3>8. Preferências do Anfitrião (prefer_ncias_do_anfitri_o)</h3>
+<p><strong>Explicação</strong>: Tela onde o dono da casa personaliza o perfil ideal da pessoa com quem deseja dividir o teto.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Perfil Demográfico</strong>:<ul>
+<li><strong>Gênero Preferencial</strong>: Botões de seleção única (Qualquer, Feminino, Masculino).</li>
+<li><strong>Faixa Etária</strong>: Slider (barra de controle) de dois pontos para definir o intervalo de idades desejado (ex: 22 a 32 anos).</li>
+</ul>
+</li>
+<li><strong>Animais</strong>: Três opções radiais (Sim, Apenas pequenos, Não aceito).</li>
+<li><strong>Política de Limpeza</strong>: Escolha interativa entre: Escala Semanal, Serviço Profissional Contratado ou Independente.</li>
+<li><strong>Política de Visitas</strong>: Conjunto de caixas de seleção (Checkboxes) para: &quot;Permitido visitas diurnas&quot;, &quot;Pernoite permitido&quot;, &quot;Final de semana livre&quot;.</li>
+<li><strong>Regras Adicionais</strong>: Área de texto longa (Textarea) para redigir obrigações e proibições específicas da casa.</li>
+<li><strong>Botão de Ação</strong>: &quot;Salvar Preferências&quot;.</li>
+</ul>
+<h3>9. Preferências do Colega (prefer_ncias_do_colega)</h3>
+<p><strong>Explicação</strong>: Formulário equivalente ao do anfitrião, porém preenchido pelo morador que está buscando vaga.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Faixa de Investimento</strong>: Slider duplo para definir o valor mínimo e máximo que deseja pagar mensalmente (ex: R$ 2.400 - R$ 4.500).</li>
+<li><strong>Localização</strong>: Campo de texto livre para digitar o bairro/cidade (ex: Pinheiros, SP).</li>
+<li><strong>Ritmo de Sono</strong>: Seleção de botões (Madrugador, Noturno, Equilibrado).</li>
+<li><strong>Sociabilidade</strong>: Três opções de estilo de convivência (Amo jantares coletivos, Equilíbrio é tudo, Prefiro meu espaço).</li>
+<li><strong>Limpeza</strong>: Opções sobre organização (Minimalista &amp; Impecável, Organizado na medida, Caos criativo).</li>
+<li><strong>Animais</strong>: Chave tipo Toggle Switch (Liga/Desliga) indicando se tem ou aceita pets.</li>
+<li><strong>Hábitos de Trabalho</strong>: Seleção de formato de trabalho (Home Office, Híbrido, Trabalho Externo).</li>
+<li><strong>Botão de Ação</strong>: &quot;Salvar Preferências&quot;.</li>
+</ul>
+<h3>10. Bate-Papo / Chat (bate_papo_coliv)</h3>
+<p><strong>Explicação</strong>: Tela de mensagens instantâneas habilitada somente após o sistema identificar e aprovar um &quot;Match&quot; mútuo entre anfitrião e candidato.
+<strong>Campos e Elementos</strong>:</p>
+<ul>
+<li><strong>Cabeçalho da Conversa</strong>: Foto, Nome da pessoa e status de perfil (ex: Anfitrião Verificado).</li>
+<li><strong>Banner de Ação</strong>: Destaque topo (&quot;Novo Match com Lucas!&quot;) e um botão &quot;Enviar Convite de Moradia&quot;.</li>
+<li><strong>Área de Conversa (Canvas)</strong>:<ul>
+<li>Linhas de divisão temporais (ex: &quot;Hoje, 14:32&quot;).</li>
+<li>Mensagens automáticas do sistema explicando o match.</li>
+<li>Balões de mensagens do remetente e do destinatário, contendo horário e símbolo de &quot;lido&quot; (ticks).</li>
+<li>Feedback de digitação (&quot;Ricardo está digitando&quot;).</li>
+</ul>
+</li>
+<li><strong>Dock de Digitação (Rodapé)</strong>:<ul>
+<li>Botão &quot;+&quot;: Para envio de mídias ou anexos.</li>
+<li><strong>Campo de Texto</strong>: Área central para digitar a mensagem.</li>
+<li><strong>Botão Enviar</strong>: Ícone de avião de papel para submeter a mensagem.</li>
+</ul>
+</li>
+</ul>
